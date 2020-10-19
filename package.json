@@ -1,0 +1,31 @@
+{
+  "name": "mmao-projekt-git",
+  "version": "1.0.0",
+  "description": "DevOps project",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "cd client && npm run start",
+    "dev": "concurrently \" npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyberber/MMAO-Projekt-Git.git"
+  },
+  "author": "Alexander Nyberg, Matts Hultin, Max Nordlund, Oliver Backman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyberber/MMAO-Projekt-Git/issues"
+  },
+  "homepage": "https://github.com/nyberber/MMAO-Projekt-Git#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.5"
+  }
+}
